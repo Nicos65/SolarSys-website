@@ -1,0 +1,18 @@
+<a href="B_Page/C_page/Neptune.html"><img height="170" width="170" src="../ressources/neptune.png" /></a>
+
+
+
+bouton page d'acceuil (réseau sociaux)
+
+<div class="body_footer">
+    <ul class="medias">
+        <li class="bulle"><a href="https://www.facebook.com/nicolas.dubroca.927/" target="_blank"><img src="ressources/fb.svg"  class="logo-medias"></a></li>
+        <li class="bulle"><a href="https://www.instagram.com/nicolas_dubroca/" target="_blank"><img src="ressources/insta.svg" class="logo-medias"></a></li>
+        <li class="bulle"><a href="https://www.youtube.com/channel/UCryyLuQ-TlLsd_6v3bcwGGw" target="_blank"><img src="ressources/yt.svg" class="logo-medias"></a></li>
+        <li class="bulle"><a href="https://github.com/Nicos65" target="_blank"><img src="ressources/github.svg" class="logo-medias"></a></li>
+    </ul>
+    
+    <p class="footer">
+        Coded by Dubroca Nicolas
+    </p>
+</div>
