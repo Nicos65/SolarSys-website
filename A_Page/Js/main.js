@@ -5,6 +5,7 @@ const toggleBtn = document.getElementById("ch");
 const html = document.querySelector("html");
 const ball = document.querySelector(".ball");
 const header = document.querySelector("header");
+const footer = document.querySelector('footer');
 
 window.addEventListener('load', () => {
 
@@ -16,7 +17,7 @@ window.addEventListener('load', () => {
     .from(btn, 1, {transform: "scale(0)", ease: "power2.out"}, 0.2)
 
     TL.play();
-})
+});
 
 window.addEventListener("scroll", () => {
 
@@ -39,5 +40,6 @@ toggleBtn.addEventListener("change", () => {
     html.classList.toggle("dark-mode");
     header.classList.toggle("dark-mode");
     ball.classList.toggle("dark-mode");
+    footer.classList.toggle("dark-mode");
 
 });

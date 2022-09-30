@@ -5,7 +5,7 @@ const toggleBtn = document.getElementById("ch");
 const html = document.querySelector("html");
 const ball = document.querySelector(".ball");
 const header = document.querySelector("header");
-const para = document.querySelector('.mention');
+const footer = document.querySelector('footer');
 
 window.addEventListener('load', () => {
 
@@ -17,17 +17,6 @@ window.addEventListener('load', () => {
     .from(btn, 1, {transform: "scale(0)", ease: "power2.out"}, 0.2)
 
     TL.play();
-})
-
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 60){
-        header.classList.add('anim-header')
-        header.classList.add('anim-header-b')
-    } else {
-        header.classList.remove('anim-header')
-        header.classList.remove('anim-header-b')
-    }
 });
 
 toggleBtn.addEventListener("change", () => {
@@ -36,6 +25,6 @@ toggleBtn.addEventListener("change", () => {
     html.classList.toggle("dark-mode");
     ball.classList.toggle("dark-mode");
     header.classList.toggle("dark-mode");
-    para.classList.toggle("dark-mode");
+    footer.classList.toggle("dark-mode");
 
 });

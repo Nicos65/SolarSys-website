@@ -11,6 +11,7 @@ const label2 = document.querySelector(".label2");
 const label3 = document.querySelector(".label3");
 const label4 = document.querySelector(".label4");
 const labellast = document.querySelector(".label-last");
+const footer = document.querySelector('footer');
 
 window.addEventListener('load', () => {
 
@@ -24,17 +25,6 @@ window.addEventListener('load', () => {
     TL.play();
 })
 
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 60){
-        header.classList.add('anim-header')
-        header.classList.add('anim-header-b')
-    } else {
-        header.classList.remove('anim-header')
-        header.classList.remove('anim-header-b')
-    }
-});
-
 toggleBtn.addEventListener("change", () => {
 
     document.body.classList.toggle("dark-mode");
@@ -47,5 +37,6 @@ toggleBtn.addEventListener("change", () => {
     label4.classList.toggle("dark-mode");
     labellast.classList.toggle("dark-mode");
     p.classList.toggle("dark-mode");
+    footer.classList.toggle("dark-mode");
 
 });

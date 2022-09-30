@@ -12,8 +12,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .container-first {
@@ -96,4 +94,20 @@ h1 span {
     transition: all 0.3s ease-in-out;
     width: 365px;
     height: 105px;
+}
+/* MEDIA */
+/* WIDTH */
+@media all and (max-width:735px){
+    .lignes {
+        display: none;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+@media all and (max-width:400px){
+    .logo {
+        width: 330px;
+        height: 100px;
+    }
 }
