@@ -10,17 +10,19 @@ const label1 = document.querySelector(".label1");
 const label2 = document.querySelector(".label2");
 const label3 = document.querySelector(".label3");
 const label4 = document.querySelector(".label4");
+const label5 = document.querySelector(".label5");
+const label6 = document.querySelector(".label6");
 const labellast = document.querySelector(".label-last");
 const footer = document.querySelector('footer');
 
 window.addEventListener('load', () => {
 
-    const TL = gsap.timeline({paused: true});
+    const TL = gsap.timeline({ paused: true });
 
     TL
-    .staggerFrom(menu, 1, {left: -50, opacity: -5, ease: "power2.out"}, 0.2)
-    .from(title, 1, {transform: "scale(0)", ease: "power2.out"}, 0.2)
-    .from(btn, 1, {transform: "scale(0)", ease: "power2.out"}, 0.2)
+        .staggerFrom(menu, 1, { left: -50, opacity: -5, ease: "power2.out" }, 0.2)
+        .from(title, 1, { transform: "scale(0)", ease: "power2.out" }, 0.2)
+        .from(btn, 1, { transform: "scale(0)", ease: "power2.out" }, 0.2)
 
     TL.play();
 })
@@ -35,6 +37,8 @@ toggleBtn.addEventListener("change", () => {
     label2.classList.toggle("dark-mode");
     label3.classList.toggle("dark-mode");
     label4.classList.toggle("dark-mode");
+    label5.classList.toggle("dark-mode");
+    label6.classList.toggle("dark-mode");
     labellast.classList.toggle("dark-mode");
     p.classList.toggle("dark-mode");
     footer.classList.toggle("dark-mode");

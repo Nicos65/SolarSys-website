@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -26,18 +28,21 @@ h1 {
     color: #757575;
     font-family: Abril fatface, sans-serif;
 }
+
 h1 span {
     position: relative;
 }
+
 .container-btns {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 50px;
-    
+
 }
-.btn-first{
+
+.btn-first {
     border: 2px solid #757575;
     outline: none;
     background: transparent;
@@ -53,16 +58,19 @@ h1 span {
     background: #BDBDBD;
     color: #000;
 }
+
 .lignes {
     position: absolute;
     top: 6%;
     right: 5%;
 }
+
 .l1 {
     width: 300px;
     height: 3px;
     background: #757575;
 }
+
 .l2 {
     width: 210px;
     height: 3px;
@@ -72,6 +80,7 @@ h1 span {
     top: 20px;
     left: 90px;
 }
+
 .l3 {
     width: 140px;
     height: 3px;
@@ -90,22 +99,26 @@ h1 span {
     height: 100px;
 
 }
+
 .logo:hover {
     transition: all 0.3s ease-in-out;
     width: 365px;
     height: 105px;
 }
+
 /* MEDIA */
 /* WIDTH */
-@media all and (max-width:735px){
+@media all and (max-width:735px) {
     .lignes {
         display: none;
     }
-    h1{
+
+    h1 {
         font-size: 50px;
     }
 }
-@media all and (max-width:400px){
+
+@media all and (max-width:400px) {
     .logo {
         width: 330px;
         height: 100px;

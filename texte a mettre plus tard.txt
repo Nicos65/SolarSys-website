@@ -21,3 +21,17 @@ bouton page d'acceuil (réseau sociaux)
 Œ 0156
 Œ minuscule 0140
 
+début php pour form
+
+<?php
+  if(!empty($_POST['user_name']) AND !empty($_POST['user_email']) AND !empty($_POST['user_message'])){
+     $name=htmlspecialchars($_POST['user_name']);
+     $email=htmlspecialchars($_POST['user_email']);
+     $message=htmlspecialchars($_POST['user_message']);
+ 
+             
+     echo "<p> Bonjour <b> $name </b> merci pour votre email:<b> $email </b>, nous avons lu votre message: </br></br> $message </p>";
+  }
+?>
+
+xsmtpsib-9886872fb6b04ce7134c487dace7eb6758d432a6c26ef288c0303bf4074400a1-XGMjrzJ5NsIDCvyg
