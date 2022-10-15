@@ -1,7 +1,6 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -16,6 +15,10 @@ body {
 a {
     text-decoration: none;
     color: #6f6f6f;
+}
+
+a:hover {
+    color: #9e9d9d;
 }
 
 /* SCROLLBAR DECORATION DISABLE */
@@ -80,6 +83,24 @@ header nav {
     display: inline-block;
 }
 
+/* NAV TELEPHONE */
+.onglets_tel {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #6f6f6f;
+}
+
 h2 {
     text-align: center;
     background-color: #c0c0c0;
@@ -100,10 +121,6 @@ div div.mention p {
 
 div div.mention p b {
     font-family: 'Black Ops One', cursive;
-}
-
-a:hover {
-    color: #9e9d9d;
 }
 
 .form {
@@ -217,6 +234,7 @@ select {
 
 .div-presentation {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 2%;
     margin-left: 2%;
@@ -451,7 +469,23 @@ footer.dark-mode {
 
 /* MEDIA */
 /* WIDTH */
-@media all and (max-width:655px) {
+/* WIDTH MIN*/
+@media all and (min-width:426px) {
+    .onglets_tel {
+        display: none;
+    }
+}
+
+/* WIDTH MAX */
+@media all and (max-width:425px) {
+    header {
+        justify-content: space-evenly;
+    }
+
+    .nav {
+        display: none;
+    }
+
     .label {
         display: none;
     }
@@ -462,9 +496,7 @@ footer.dark-mode {
     }
 
     footer {
-        padding: 0;
-        padding-left: 10px;
-        padding-top: 10px;
+        padding: 10px 20px;
     }
 }
 
