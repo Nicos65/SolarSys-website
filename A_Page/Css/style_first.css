@@ -372,7 +372,7 @@ footer.dark-mode {
 
 /* MEDIA */
 /* WIDTH MIN*/
-@media all and (min-width:426px) {
+@media all and (min-width:769px) {
     .onglets_tel {
         display: none;
     }
@@ -410,6 +410,63 @@ footer.dark-mode {
     }
 }
 
+@media all and (max-width:769px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header div {
+        margin: 20px;
+    }
+
+    .nav {
+        top: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(2px);
+        width: 105%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -105%;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 25px 0px 25px 0px;
+        font-size: 1.4em;
+    }
+
+    .nav ul li a {
+        color: #9e9d9d;
+    }
+
+    nav.menu-tel {
+        margin-left: 0;
+    }
+
+
+    .nav div {
+        display: none;
+    }
+
+    .label {
+        display: none;
+    }
+
+    .first-p {
+        display: none;
+    }
+}
+
 @media all and (max-width:780px) {
     .bt1 {
         padding-left: 250px;
@@ -428,16 +485,6 @@ footer.dark-mode {
     }
 }
 
-@media all and (max-width:670px) {
-    .label {
-        display: none;
-    }
-
-    .first-p {
-        padding-top: 20%;
-    }
-}
-
 @media all and (max-width:560px) {
     .bt1 {
         padding-left: 100px;
@@ -450,20 +497,9 @@ footer.dark-mode {
     .bt4 {
         padding-left: 100px;
     }
-
-    .first-p {
-        padding-top: 30%;
-    }
 }
 
 @media all and (max-width:425px) {
-    header {
-        justify-content: space-evenly;
-    }
-
-    .nav {
-        display: none;
-    }
 
     .btn-first {
         font-size: 20px;
@@ -499,16 +535,16 @@ footer.dark-mode {
         margin-left: 42%;
     }
 
-    .first-p {
-        display: none;
-    }
-
     ::-webkit-scrollbar {
         display: none;
     }
 }
 
 @media all and (max-width:375px) {
+    header div {
+        margin: 10px;
+    }
+
     .btn-first {
         font-size: 20px;
         width: 200px;

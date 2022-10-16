@@ -103,8 +103,8 @@ header nav {
 
 h2 {
     text-align: center;
-    background-color: #c0c0c0;
-    color: #000;
+    background-color: rgb(181, 181, 181);
+    color: #303030;
 }
 
 div div.mention {
@@ -124,10 +124,9 @@ div div.mention p b {
 }
 
 .form {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     text-align: center;
-    padding-left: 35%;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -137,31 +136,37 @@ div div.mention p b {
     padding: 10px;
 }
 
-select {
-    height: 30px;
+input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
     width: 50%;
+    height: 45px;
+    background-color: #F5F6F8;
+    border-bottom: 2px solid #adadad;
+}
+
+select {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    width: 50%;
+    height: 45px;
+    background-color: #F5F6F8;
+}
+
+textarea {
+    width: 50%;
+    height: 50px;
 }
 
 .regroup-form {
     display: flex;
     flex-wrap: wrap;
-}
-
-#input3 {
-    height: 30px;
-    width: 50%;
-}
-
-#input4 {
-    height: 80px;
-    width: 50%;
-}
-
-#input5 {
-    border: 1px solid #999;
-    border-radius: 3px;
-    padding: 5px 8px;
-    cursor: pointer;
 }
 
 .label-c {
@@ -183,14 +188,17 @@ select {
 }
 
 #input7 {
-    border: 1px solid #000;
-    outline: none;
-    background: #fff;
-    font-size: 20px;
-    padding: 10px;
-    width: 200px;
+    border: solid 2px;
+    width: 50%;
+    background: none;
     cursor: pointer;
-    font-family: 'Black Ops One', cursive;
+    border-radius: 9px;
+    font-size: 1.2rem;
+}
+
+input[type=checkbox] {
+    width: auto;
+    height: auto;
 }
 
 #input7:hover {
@@ -470,19 +478,58 @@ footer.dark-mode {
 /* MEDIA */
 /* WIDTH */
 /* WIDTH MIN*/
-@media all and (min-width:426px) {
+@media all and (min-width:769px) {
     .onglets_tel {
         display: none;
     }
 }
 
 /* WIDTH MAX */
-@media all and (max-width:425px) {
+@media all and (max-width:769px) {
     header {
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+
+    header div {
+        margin: 20px;
     }
 
     .nav {
+        top: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(2px);
+        width: 105%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -105%;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 25px 0px 25px 0px;
+        font-size: 1.4em;
+    }
+
+    .nav ul li a {
+        color: #9e9d9d;
+    }
+
+    nav.menu-tel {
+        margin-left: 0;
+    }
+
+
+    .nav div {
         display: none;
     }
 
@@ -490,6 +537,19 @@ footer.dark-mode {
         display: none;
     }
 
+}
+
+@media all and (max-width:570px) {
+    .form {
+        padding: 0px;
+    }
+
+    #input3 {
+        width: 120px;
+    }
+}
+
+@media all and (max-width:425px) {
     .form {
         padding-left: 0;
         font-size: 10px;
@@ -500,12 +560,8 @@ footer.dark-mode {
     }
 }
 
-@media all and (max-width:570px) {
-    .form {
-        padding: 0px;
-    }
-
-    #input3 {
-        width: 120px;
+@media all and (max-width:375px) {
+    header div {
+        margin: 10px;
     }
 }

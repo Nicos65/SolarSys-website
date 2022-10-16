@@ -7,6 +7,8 @@ const ball = document.querySelector(".ball");
 const header = document.querySelector("header");
 const footer = document.querySelector('footer');
 const mention = document.querySelector('.mention');
+const navtel = document.querySelector('.onglets_tel');
+const navlink = document.querySelector('.nav');
 
 window.addEventListener('load', () => {
 
@@ -29,4 +31,15 @@ toggleBtn.addEventListener("change", () => {
     footer.classList.toggle("dark-mode");
     mention.classList.toggle("dark-mode");
 
+});
+
+let menuOpen = false;
+navtel.addEventListener('click', () => {
+    if (!menuOpen) {
+        navlink.classList.add('menu-tel');
+        menuOpen = true;
+    } else {
+        navlink.classList.remove('menu-tel');
+        menuOpen = false;
+    }
 });

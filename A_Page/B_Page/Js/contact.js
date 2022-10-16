@@ -14,6 +14,8 @@ const label5 = document.querySelector(".label5");
 const label6 = document.querySelector(".label6");
 const labellast = document.querySelector(".label-last");
 const footer = document.querySelector('footer');
+const navtel = document.querySelector('.onglets_tel');
+const navlink = document.querySelector('.nav');
 
 window.addEventListener('load', () => {
 
@@ -43,4 +45,14 @@ toggleBtn.addEventListener("change", () => {
     p.classList.toggle("dark-mode");
     footer.classList.toggle("dark-mode");
 
+});
+let menuOpen = false;
+navtel.addEventListener('click', () => {
+    if (!menuOpen) {
+        navlink.classList.add('menu-tel');
+        menuOpen = true;
+    } else {
+        navlink.classList.remove('menu-tel');
+        menuOpen = false;
+    }
 });

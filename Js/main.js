@@ -18,4 +18,4 @@ window.addEventListener('load', () => {
         .from(logo, 1, { transform: "scale(0)", ease: "power2.out" }, '-=2')
 
     TL.play();
-})
+});
