@@ -1,21 +1,28 @@
 # SolarSys
-## Table of Contents
+## table des matières
 1. [Info général](#Info-général)
 2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+3. [FAQs](#faqs)
 ### Info général
 ***
-Write down general information about your project. It is a good idea to always put a project status in the readme file. This is where you can add it. 
-### Screenshot
-![Image text](ressources/screen/screen1.PNG)
-![Image text](ressources/screen/screen2.PNG)
-![Image text](ressources/screen/screen3.PNG)
-![Image text](ressources/screen/screen4.PNG)
-![Image text](ressources/screen/screen5.PNG)
-![Image text](ressources/screen/screen6.PNG)
-![Image text](ressources/screen/screen7.PNG)
+Ceci est projet commencé en première année de licence informatique, je voulais faire un site sur un sujet que j'aime donc l'espace.
+
+Ce site est constitué d'une page d'accueil pre-site (décoration) pour ensuite arriver sur une autre page d'accueil contenant 4 grandes sections qui sont:
+- planètes
+- Satellites
+- Asteroides
+- Contact
+Les 3 premières sections renvoient sur une page de catalogue qui affiche chaque élément de la section (ex: Pour les planètes cela donnera comme sur la 5e capture d'écran).
+Bien sur 
+![Arboressance du site](ressources/screen/screen.PNG)
+### Captures d'écran
+![Page Index(première page)](ressources/screen/screen1.PNG)
+![Page d'accueil](ressources/screen/screen2.PNG)
+![Page d'accueil partie satellite](ressources/screen/screen3.PNG)
+![Page mention légale (mode sombre)](ressources/screen/screen4.PNG)
+![Page catalogue planètes (mode clair)](ressources/screen/screen5.PNG)
+![Page catalogue satellites (mode sombre)](ressources/screen/screen6.PNG)
+![Page catalogue asteroides (mode clair)](ressources/screen/screen7.PNG)
 ## Technologies
 ***
 Voici la liste des technologies utilisés dans le projet :
