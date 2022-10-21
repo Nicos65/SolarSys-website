@@ -2,16 +2,19 @@
 ## table des matières
 1. [Info général](#Info-général)
 2. [Technologies](#technologies)
-3. [FAQs](#faqs)
+3. [Auteur](#Auteur)
+4. [FAQs](#faqs)
 ### Info général
 ***
 Ceci est projet commencé en première année de licence informatique, je voulais faire un site sur un sujet que j'aime donc l'espace.
 
 Ce site est constitué d'une page d'accueil pre-site (décoration) pour ensuite arriver sur une autre page d'accueil contenant 4 grandes sections qui sont:
+
 - planètes
 - Satellites
 - Asteroides
 - Contact
+
 Les 3 premières sections renvoient sur une page de catalogue qui affiche chaque élément de la section (ex: Pour les planètes cela donnera comme sur la 5e capture d'écran).
 Bien sur 
 ![Arboressance du site](ressources/screen/screen.PNG)
@@ -31,6 +34,9 @@ Voici la liste des technologies utilisés dans le projet :
 * [JS](https://en.wikipedia.org/wiki/JavaScript): Version ECMA-262
 * [PHP](https://www.php.net/downloads.php): Version 8.1
 * [LIBRAIRIE AJAX](https://example.com): Version 3.5.1
+## Auteur
+***
+Dubroca nicolas [@Nicos65](https://github.com/Nicos65)
 ## FAQs
 ***
 A list of frequently asked questions
