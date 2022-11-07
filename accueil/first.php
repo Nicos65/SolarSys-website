@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -64,7 +63,7 @@
 
     <section class="s1">
         <div class="bt1">
-            <a href="catalogue/Planetes.html"><button class="btn-first btn1">Découvrir</button></a>
+            <a href="catalogue/planetes.php"><button class="btn-first btn1">Découvrir</button></a>
         </div>
         <a href=""><img class="img2 move" width="60" src="../ressources/haut.png" alt="bouton haut"></a>
         <a href="#ancre_2"><img class="img3 move" width="60" src="../ressources/bas.png" alt="bouton bas">></a>
@@ -74,7 +73,7 @@
 
     <section class="s2">
         <div class="bt2">
-            <a href="catalogue/Satellites.html"><button class="btn-first btn2">Découvrir</button></a>
+            <a href="catalogue/satellites.php"><button class="btn-first btn2">Découvrir</button></a>
         </div>
         <a href="#ancre_1"><img class="img2 move" width="60" src="../ressources/haut.png" alt="bouton haut"></a>
         <a href="#ancre_3"><img class="img3 move" width="60" src="../ressources/bas.png" alt="bouton bas">></a>
@@ -84,7 +83,7 @@
 
     <section class="s3">
         <div class="bt1">
-            <a href="catalogue/Asteroides.html"><button class="btn-first btn3">Découvrir</button></a>
+            <a href="catalogue/asteroides.php"><button class="btn-first btn3">Découvrir</button></a>
         </div>
         <a href="#ancre_2"><img class="img2 move" width="60" src="../ressources/haut.png" alt="bouton haut"></a>
         <a href="#ancre_4"><img class="img3 move" width="60" src="../ressources/bas.png" alt="bouton bas">></a>
@@ -94,7 +93,7 @@
 
     <section class="s4">
         <div class="bt4">
-            <a href="catalogue/Contact.html"><button class="btn-first btn4">Nous contacter</button></a>
+            <a href="catalogue/contact.php"><button class="btn-first btn4">Nous contacter</button></a>
         </div>
         <a href="#ancre_3"><img class="img2 move" width="60" src="../ressources/haut.png" alt="bouton haut"></a>
         <a href="#ancre_5"><img class="img3 move" width="60" src="../ressources/bas.png" alt="bouton bas"></a>
@@ -109,9 +108,9 @@
                 <h3>Catégories</h3>
                 <nav>
                     <ul>
-                        <li><a href="catalogue/Planetes.html">Planètes</a></li>
-                        <li><a href="catalogue/Satellites.html">Satellites</a></li>
-                        <li><a href="catalogue/Asteroides.html">Asteroïde</a></li>
+                        <li><a href="catalogue/planetes.php">Planètes</a></li>
+                        <li><a href="catalogue/satellites.php">Satellites</a></li>
+                        <li><a href="catalogue/asteroides.php">Asteroïde</a></li>
                     </ul>
                 </nav>
             </div>
@@ -120,9 +119,9 @@
                 <h3>aide & information</h3>
                 <nav>
                     <ul>
-                        <li><a href="catalogue/Mention.html">Mention légales</a></li>
-                        <li><a href="catalogue/Politique.html">Politique de confidentialité</a></li>
-                        <li><a href="catalogue/Contact.html">Contact</a></li>
+                        <li><a href="catalogue/mention.php">Mention légales</a></li>
+                        <li><a href="catalogue/politique.php">Politique de confidentialité</a></li>
+                        <li><a href="catalogue/contact.php">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -143,8 +142,7 @@
                     <h3>restez informé</h3>
                     <input type="email" class="inp-form">
                     <input type="checkbox" id="ch1">
-                    <label for="ch1">En vous inscrivant, vous acceptez de vous conformer à la <a
-                            href="Politique.html">Politique de Confidentialité</a>.</label>
+                    <label for="ch1">En vous inscrivant, vous acceptez de vous conformer à la <a href="politique.php">Politique de Confidentialité</a>.</label>
                     <input type="submit" value="S'ABONNER" class="inp-form">
                 </div>
             </form>
