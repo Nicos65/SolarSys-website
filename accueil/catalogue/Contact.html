@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SolarSys</title>
-    <link rel="stylesheet" href="Css/styleall.css">
+    <link rel="stylesheet" href="css/styleall.css">
+    <link rel="stylesheet" href="css/styleContact.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../ressources/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../ressources/icons/icon.png">
 </head>
 
 <body>
@@ -22,11 +23,11 @@
         </div>
         <nav class="nav">
             <ul>
-                <li><a class="menu" href="../first.html">Accueil</a></li>
+                <li><a class="menu" href="../../index.html">Accueil</a></li>
                 <li><a class="menu" href="Planetes.html">Planètes</a></li>
                 <li><a class="menu" href="Satellites.html">Satellites</a></li>
                 <li><a class="menu" href="Asteroides.html">Asteroïde</a></li>
-                <li><a class="menu" href="#">Contact</a></li>
+                <li><a class="menu active" href="#">Contact</a></li>
             </ul>
             <div class="toggle">
                 <input type="checkbox" class="checkbox" id="ch" />
@@ -44,114 +45,101 @@
 
     <div class="home"></div>
 
-    <section>
-        <h2>Contactez-nous</h2>
-        <section class="form">
-            <form action="../../php/form.php" method="post">
-                <section>
-                    <div class="p">
-                        <div class="form-g">
-                            <label for="input" class="label-c label1">sujet* :</label>
-                            <select required name="select">
-                                <option value="" selected disabled hidden>--Choisir une demande--</option>
-                                <option value="1">Demande professionnelle</option>
-                                <option value="2">Partenariat</option>
-                                <option value="3">Contacte presse</option>
-                                <option value="4">Problème technique</option>
-                            </select>
-                        </div>
-                        <div class="regroup-form">
-                            <div class="form-g">
-                                <label for="input1" class="label-c label2">Nom* :</label>
-                                <input type="text" placeholder="Ex : Dubroca" required name="surname" id="input1">
-                            </div>
-                            <div class="form-g">
-                                <label for="input2" class="label-c label3">Prenom :</label>
-                                <input type="text" placeholder="Ex : Nicolas" name="name" id="input2">
-                            </div>
-                        </div>
-                        <div class="form-g">
-                            <label for="input3" class="label-c label4">e-mail* :</label>
-                            <input
-                                pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})"
-                                type="email" placeholder="Ex : Bonjour@cestmoi24.com" required name="email" id="input3">
-                        </div>
-                        <div class="form-g">
-                            <label for="input4" class="label-c label5">message* :</label>
-                            <textarea spellcheck="true" placeholder="Ex : écrire un petit commentaire ;D" required
-                                name="message" id="input4"></textarea>
-                        </div>
-                        <div class="form-g">
-                            <label for="input5" class="label-c label6">document joint (PNG, JPG, PDF):</label>
-                            <input type="file" accept=".png, .jpg, .jpeg, .pdf" name="name" id="input5">
-                        </div>
-                        <p>Les champs indiqués par une * sont obligatoires</p>
-                        <div class="form-g">
-                            <input type="checkbox" id="input6">
-                            <label for="input6" required class="label-last">J'accepte les termes et conditions et la
-                                politique de confidentialité&ensp;<a href="Politique.html"><b>lire les termes et
-                                        conditions d'utilisation</b></a>.</label>
-                        </div>
-                    </div>
-                    <input type="submit" value="Envoyer">
-                </section>
-            </form>
-        </section>
+    <section class="section_contact">
+        <form>
+            <h1>Une question ou une demande?</h1>
+            <select required id="selection" name="select">
+                <option value="" selected disabled hidden>--Choisir une demande--</option>
+                <option value="1">Demande professionnelle</option>
+                <option value="2">Partenariat</option>
+                <option value="3">Contacte presse</option>
+                <option value="4">Problème technique</option>
+                <option value="5">Question?</option>
+            </select>
+            <input type="text" id="nom" placeholder="Nom" required>
+            <input type="text" id="prenom" placeholder="Prenom" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <textarea required placeholder="Un message?"></textarea>
+            <input type="submit" value="Envoyer" id="button">
+        </form>
+
+        <div class="contact-info">
+            <div>
+                <img src="../ressources/icons/enveloppe.png" class="carte-icon">
+                <p>email.email45@email.com</p>
+            </div>
+
+            <div>
+                <img src="../ressources/icons/telephone.png" class="carte-icon">
+                <p>+33000000000</p>
+            </div>
+
+            <div>
+                <img src="../ressources/icons/lieu.png" class="carte-icon">
+                <p>7 Avenue des lilas<br>75000 Paris, FR</p>
+            </div>
+        </div>
+
+
     </section>
 
     <footer class="contact">
         <hr class="hr-contact">
         <div class="services">
-
-            <div class="service">
-                <h3>Catégories</h3>
-                <nav>
-                    <ul>
-                        <li><a href="Planetes.html">Planètes</a></li>
-                        <li><a href="Satellites.html">Satellites</a></li>
-                        <li><a href="Asteroides.html">Asteroïde</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="service">
-                <h3>aide & information</h3>
-                <nav>
-                    <ul>
-                        <li><a href="Mention.html">Mention légales</a></li>
-                        <li><a href="Politique.html">Politique de confidentialité</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="service">
-                <h3>nous suivre</h3>
-                <nav>
-                    <ul>
-                        <li><a href="https://www.facebook.com/nicolas.dubroca.927/">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/nicolas_dubroca/">Instagram</a></li>
-                        <li><a href="https://twitter.com/NicolasDubroca">Twitter</a></li>
-                        <li><a href="https://github.com/Nicos65">Github</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <form action="../../php/form_footer.php" method="post">
+            <div class="part_1">
                 <div class="service">
-                    <h3>restez informé</h3>
-                    <input type="email" class="inp-form">
-                    <input type="checkbox" id="ch1">
-                    <label for="ch1">En vous inscrivant, vous acceptez de vous conformer à la <a
-                            href="Politique.html">Politique de Confidentialité</a>.</label>
-                    <input type="submit" value="S'ABONNER" class="inp-form">
+                    <h3>Catégories</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="Planetes.html">Planètes</a></li>
+                            <li><a href="Satellites.html">Satellites</a></li>
+                            <li><a href="Asteroides.html">Asteroïde</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </form>
+
+                <div class="service">
+                    <h3>aide & information</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="Mention.html">Mention légales</a></li>
+                            <li><a href="Politique.html">Politique de confidentialité</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="service">
+                    <h3>nous suivre</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.facebook.com/nicolas.dubroca.927/">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/nicolas_dubroca/">Instagram</a></li>
+                            <li><a href="https://twitter.com/NicolasDubroca">Twitter</a></li>
+                            <li><a href="https://github.com/Nicos65">Github</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <form action="" method="post">
+                    <div class="service">
+                        <h3>restez informé</h3>
+                        <input type="email" class="inp-form">
+                        <input type="checkbox" id="ch1">
+                        <label for="ch1">En vous inscrivant, vous acceptez de vous conformer à la <a
+                                href="Politique.html">Politique de Confidentialité</a>.</label>
+                        <input type="submit" value="S'ABONNER" class="inp-form">
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
     <p id="contact">&copy; 2021 - SolarSys</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="../Js/main.js"></script>
-    <script src="Js/contact.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
