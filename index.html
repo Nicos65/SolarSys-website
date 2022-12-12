@@ -5,31 +5,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SolarSys</title>
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="accueil/css/style_first.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="ressources/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="accueil/ressources/icons/icon.png">
 </head>
 
-<body>
-    <section class="section_index">
-        <img src="ressources/Logo_480x100_px.png" alt="logo SolarSys" class="logo">
-        <div class="lignes">
-            <div class="l1"></div>
-            <div class="l2"></div>
-            <div class="l3"></div>
+<body id="home">
+
+    <video autoplay="true" loop muted>
+        <source src="accueil/ressources/home.mp4" type="video/mp4">
+    </video>
+
+    <header>
+
+        <div class="title">
+            <a href="index.html">
+                <h1>SolarSys</h1>
+            </a>
         </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#ancre_1">Planètes</a></li>
+                <li><a href="#ancre_2">Satellites</a></li>
+                <li><a href="#ancre_3">Asteroïde</a></li>
+                <li><a href="#ancre_4">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="onglets_tel">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </header>
+
+    <section class="s1" id="ancre_1">
+        <div class="bt1">
+            <a href="accueil/catalogue/Planetes.html" class="init"><button class="btn-first">Découvrir</button></a>
+        </div>
+        <a href="#home"><img class="img2 move" width="60" src="accueil/ressources/icons/haut.png" alt="bouton haut"></a>
+        <a href="#ancre_2"><img class="img3 move" width="60" src="accueil/ressources/icons/bas.png"
+                alt="bouton bas">></a>
     </section>
 
-    <div class="container-first">
-        <h1><span>The </span><span>Universe </span><span>As </span><span>You </span><span>Had </span><span>Never
-            </span><span>Seen </span><span>It</span></h1>
-        <div class="container-btns">
-            <a href="accueil/first.html"><button class="btn-first">Discover</button></a>
+    <section class="s2" id="ancre_2">
+        <div class="bt2">
+            <a href="accueil/catalogue/Satellites.html"><button class="btn-first">Découvrir</button></a>
         </div>
-    </div>
+        <a href="#ancre_1"><img class="img2 move" width="60" src="accueil/ressources/icons/haut.png"
+                alt="bouton haut"></a>
+        <a href="#ancre_3"><img class="img3 move" width="60" src="accueil/ressources/icons/bas.png"
+                alt="bouton bas">></a>
+    </section>
 
+    <section class="s3" id="ancre_3">
+        <div class="bt1">
+            <a href="accueil/catalogue/Asteroides.html"><button class="btn-first">Découvrir</button></a>
+        </div>
+        <a href="#ancre_2"><img class="img2 move" width="60" src="accueil/ressources/icons/haut.png"
+                alt="bouton haut"></a>
+        <a href="#ancre_4"><img class="img3 move" width="60" src="accueil/ressources/icons/bas.png"
+                alt="bouton bas">></a>
+    </section>
+
+    <section class="s4" id="ancre_4">
+        <div class="bt4">
+            <a href="accueil/catalogue/Contact.html"><button class="btn-first">Découvrir</button></a>
+        </div>
+        <a href="#ancre_3"><img class="img2 move" width="60" src="accueil/ressources/icons/haut.png"
+                alt="bouton haut"></a>
+        <a href="#ancre_5"><img class="img3 move" width="60" src="accueil/ressources/icons/bas.png"
+                alt="bouton bas"></a>
+    </section>
+
+    <footer class="contact" id="ancre_5">
+        <div class="services">
+            <div class="part_1">
+                <div class="service">
+                    <h3>Catégories</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="accueil/catalogue/Planetes.html">Planètes</a></li>
+                            <li><a href="accueil/catalogue/Satellites.html">Satellites</a></li>
+                            <li><a href="accueil/catalogue/Asteroides.html">Asteroïde</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="service">
+                    <h3>aide & information</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="accueil/catalogue/Mention.html">Mention légales</a></li>
+                            <li><a href="accueil/catalogue/Politique.html">Politique de confidentialité</a></li>
+                            <li><a href="accueil/catalogue/Contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="service">
+                    <h3>nous suivre</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.facebook.com/nicolas.dubroca.927/">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/nicolas_dubroca/">Instagram</a></li>
+                            <li><a href="https://twitter.com/NicolasDubroca">Twitter</a></li>
+                            <li><a href="https://github.com/Nicos65">Github</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <form action="" method="post">
+                    <div class="service">
+                        <h3>restez informé</h3>
+                        <input type="email" class="inp-form">
+                        <input type="checkbox" id="ch1">
+                        <label for="ch1">En vous inscrivant, vous acceptez de vous conformer à la <a
+                                href="Politique.html">Politique de Confidentialité</a>.</label>
+                        <input type="submit" value="S'ABONNER" class="inp-form">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <p id="contact">&copy; 2022 - SolarSys</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="Js/main.js"></script>
+    <script src="accueil/js/main.js"></script>
 </body>
 
 </html>
