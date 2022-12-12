@@ -29,12 +29,6 @@
                 <li><a class="menu" href="Asteroides.html">Asteroïde</a></li>
                 <li><a class="menu active" href="#">Contact</a></li>
             </ul>
-            <div class="toggle">
-                <input type="checkbox" class="checkbox" id="ch" />
-                <label for="ch" class="label">
-                    <div class="ball"></div>
-                </label>
-            </div>
         </nav>
         <div class="onglets_tel">
             <span class="line"></span>
@@ -46,7 +40,7 @@
     <div class="home"></div>
 
     <section class="section_contact">
-        <form>
+        <form action="" method="post">
             <h1>Une question ou une demande?</h1>
             <select required id="selection" name="select">
                 <option value="" selected disabled hidden>--Choisir une demande--</option>
@@ -59,8 +53,8 @@
             <input type="text" id="nom" placeholder="Nom" required>
             <input type="text" id="prenom" placeholder="Prenom" required>
             <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="mobile" placeholder="Mobile" required>
-            <textarea required placeholder="Un message?"></textarea>
+            <input type="tel" id="mobile" placeholder="Mobile" required>
+            <textarea id="message" required placeholder="Un message?"></textarea>
             <input type="submit" value="Envoyer" id="button">
         </form>
 

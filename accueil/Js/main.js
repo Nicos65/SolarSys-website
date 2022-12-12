@@ -1,14 +1,7 @@
 const menu = document.querySelectorAll('.menu');
 const title = document.querySelector('.title');
-const btn = document.querySelector('.label');
-const toggleBtn = document.getElementById("ch");
-const html = document.querySelector("html");
-const ball = document.querySelector(".ball");
-const header = document.querySelector("header");
-const footer = document.querySelector('footer');
-const navtel = document.querySelector('.onglets_tel');
-const navlink = document.querySelector('.nav');
 const titreSpans = document.querySelectorAll('h1 span');
+const btn = document.querySelector('.label');
 
 window.addEventListener('load', () => {
 
@@ -28,7 +21,7 @@ let font = document.getElementById('font');
 let titre = document.getElementById('titre');
 let explore = document.getElementById('explore');
 
-window.addEventListener("scroll", function () {
+/*window.addEventListener("scroll", function () {
     let value = window.scrollY
     star.style.left = value + "px";
     titre.style.top = value + "px";
@@ -36,37 +29,27 @@ window.addEventListener("scroll", function () {
     explore.style.marginTop = +value1 + "px";
     if (window.scrollY > 500) {
         explore.style = "hidden"
+
     }
     if (window.scrollY > 600) {
         titre.style = "hidden"
     }
-})
+})*/
+
+const header = document.querySelector("header");
+
 window.addEventListener("scroll", () => {
 
-    if (window.scrollY > 60) {
-        header.classList.add('anim-header')
+    if (window.scrollY > 0) {
+        header.classList.add('colle')
     } else {
-        header.classList.remove('anim-header')
-    }
-
-    if (window.scrollY > 860) {
-        header.classList.add('anim-header-b')
-    } else {
-        header.classList.remove('anim-header-b')
+        header.classList.remove('colle')
     }
 });
 
-const mention = document.querySelector('.mention');
+const navtel = document.querySelector('.onglets_tel');
+const navlink = document.querySelector('.nav');
 
-toggleBtn.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-    html.classList.toggle("dark-mode");
-    header.classList.toggle("dark-mode");
-    ball.classList.toggle("dark-mode");
-    footer.classList.toggle("dark-mode");
-    mention.classList.toggle("dark-mode");
-
-});
 let menuOpen = false;
 navtel.addEventListener('click', () => {
     if (!menuOpen) {
