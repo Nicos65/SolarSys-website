@@ -16,26 +16,6 @@ window.addEventListener('load', () => {
     TL.play();
 });
 
-let star = document.getElementById('star');
-let font = document.getElementById('font');
-let titre = document.getElementById('titre');
-let explore = document.getElementById('explore');
-
-/*window.addEventListener("scroll", function () {
-    let value = window.scrollY
-    star.style.left = value + "px";
-    titre.style.top = value + "px";
-    let value1 = value + 250
-    explore.style.marginTop = +value1 + "px";
-    if (window.scrollY > 500) {
-        explore.style = "hidden"
-
-    }
-    if (window.scrollY > 600) {
-        titre.style = "hidden"
-    }
-})*/
-
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
