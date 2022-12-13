@@ -741,6 +741,10 @@ label a {
 
 @media all and (max-width:425px) {
 
+    .mention {
+        margin: 2%;
+    }
+
     header {
         padding: 40px 50px;
     }
