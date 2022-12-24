@@ -124,6 +124,23 @@ header ul {
     background: #fff;
 }
 
+/* GENERAL PLANETE */
+.informations {
+    display: flex;
+    color: #FFF;
+    margin: 30px;
+}
+
+.informations div ul {
+    list-style-type: none;
+}
+
+.desc p {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+}
+
 /* MENTION/POLITIQUE */
 .mention {
     color: #fff;
@@ -156,6 +173,15 @@ header ul {
 .section_contact form {
     margin-right: 30px;
 }
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+}
 
 /*FORM*/
 .section_contact form {
@@ -169,7 +195,7 @@ header ul {
 }
 
 .section_contact form h1 {
-    color: #fff;
+    color: #000;
     font-weight: 20px;
     margin-top: 20px;
     width: 100%;
@@ -185,8 +211,8 @@ header ul {
     font-size: 15px;
     margin-bottom: 10px;
     background: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-bottom: 2px solid #000;
+    color: #000;
 }
 
 .section_contact form select {
@@ -196,21 +222,21 @@ header ul {
     border: none;
     font-size: 15px;
     margin-bottom: 10px;
-    background: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    background: transparent;
+    border-bottom: 2px solid #000;
+    color: #000;
 }
 
 .section_contact form select:hover {
-    background-color: #000;
+    background-color: #FFF;
 }
 
 .section_contact form textarea {
     background: none;
     border: none;
     width: 90%;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-bottom: 2px solid #000;
+    color: #000;
     font-weight: 200;
     font-size: 15px;
     padding: 10px;
@@ -219,20 +245,19 @@ header ul {
 
 form input::placeholder,
 form textarea::placeholder {
-    color: #fff;
+    color: #000;
 }
 
 .section_contact form #button {
     border: none;
     background: #fff;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 600;
     font-size: 20px;
     color: #000;
     width: 100px;
     padding: 0;
-    margin-right: 500px;
     margin-bottom: 30px;
     transition: 0.3s;
 }
