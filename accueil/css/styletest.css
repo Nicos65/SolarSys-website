@@ -14,6 +14,13 @@ body {
     font-family: 'Abril fatface', sans-serif;
 }
 
+.body-contact {
+    background: url("../ressources/background/ciell.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 a {
     text-decoration: none;
     color: #FFF;
@@ -26,7 +33,7 @@ a {
 /* SCROLLBAR DECORATION DISABLE */
 ::-webkit-scrollbar {
     width: 5px;
-    background: transparent;
+    background: #000;
     overflow-y: scroll;
 }
 
@@ -173,6 +180,7 @@ header ul {
 .section_contact form {
     margin-right: 30px;
 }
+
 iframe {
     position: absolute;
     top: 0;
@@ -638,12 +646,6 @@ label a {
     color: #6f6f6f;
 }
 
-#contact {
-    background-color: #303030;
-    color: rgb(181, 181, 181);
-    text-align: center;
-}
-
 #reseaux {
     display: flex;
     justify-content: space-around;
@@ -700,7 +702,7 @@ label a {
         align-items: center;
         width: 100%;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.10);
+        background-color: rgba(0, 0, 0, 0.60);
         margin-top: 100vh;
         transition: 0.6s ease-in-out;
     }
@@ -757,10 +759,6 @@ label a {
 @media all and (max-width:570px) {
     .form {
         padding: 0px;
-    }
-
-    #input3 {
-        width: 120px;
     }
 }
 

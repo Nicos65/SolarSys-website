@@ -40,7 +40,7 @@ a {
 /* SCROLLBAR DECORATION */
 ::-webkit-scrollbar {
     width: 5px;
-    background: transparent;
+    background: #000;
     overflow-y: scroll;
 }
 
@@ -64,6 +64,7 @@ header {
     z-index: 15;
 }
 
+/* Ajout JS (anim) */
 .colle {
     padding: 10px 50px;
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
@@ -519,36 +520,43 @@ section {
 #start section .btn-section {
     padding-bottom: 450px;
 }
+
 #start section .section-nav {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
 
+.s0 {
+    background: url('../ressources/background/news.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .s1 {
-    background: url('../ressources/bg.jpg');
+    background: url('../ressources/background/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .s2 {
-    background: url('../ressources/satellites.jpg');
+    background: url('../ressources/background/satellites.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .s3 {
-    background: url('../ressources/asteroide.png');
+    background: url('../ressources/background/asteroide.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .s4 {
-    background: url('../ressources/contact.png');
+    background: url('../ressources/background/contact.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -699,12 +707,6 @@ label a {
     color: #6f6f6f;
 }
 
-#contact {
-    background-color: #303030;
-    color: rgb(181, 181, 181);
-    text-align: center;
-}
-
 #reseaux {
     display: flex;
     justify-content: space-around;
@@ -763,7 +765,7 @@ label a {
         align-items: center;
         width: 100%;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.10);
+        background-color: rgba(0, 0, 0, 0.60);
         margin-top: 100vh;
         transition: 0.6s ease-in-out;
     }
