@@ -10,14 +10,137 @@
 
 /* BODY */
 body {
-    height: 100vh;
     background-color: #000;
     overflow-x: hidden;
     height: 100%;
     font-family: 'Abril fatface', sans-serif;
 }
 
-/* SETUP START PAGE */
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.home {
+    padding-top: 150px;
+}
+
+/* SECTION BODY */
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+#start section {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start section .btn-section {
+    padding-bottom: 450px;
+}
+
+#start section .section-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.s0 {
+    background: url('../ressources/background/news.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s1 {
+    background: url('../ressources/background/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s2 {
+    background: url('../ressources/background/satellites.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s3 {
+    background: url('../ressources/background/asteroide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s4 {
+    background: url('../ressources/background/contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-first {
+    border: 2px solid #fff;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Black Ops One', cursive;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-first::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 77px;
+    top: 0;
+    left: 0;
+    background-color: #2c5364;
+    z-index: -1;
+    transition: .4s ease-in-out;
+}
+
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-first:hover:before {
+    width: 296px;
+}
+
+.content a {
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    font-size: 10px;
+    padding: 10px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Black Ops One', cursive;
+}
+
+.content a:hover {
+    transition: all 0.3s ease-in-out;
+    background: #BDBDBD;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* SETUP START PAGE (INDEX) */
 video {
     position: relative;
     top: 0;
@@ -28,16 +151,7 @@ video {
     object-fit: cover;
 }
 
-a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.start {
-    padding-top: 150px;
-}
-
-/* SCROLLBAR DECORATION */
+/* CHANGE SCROLLBAR DECORATION */
 ::-webkit-scrollbar {
     width: 5px;
     background: #000;
@@ -64,7 +178,7 @@ header {
     z-index: 15;
 }
 
-/* Ajout JS (anim) */
+/* STICKY HEADER JS (anim) */
 .colle {
     padding: 10px 50px;
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
@@ -139,12 +253,31 @@ header ul {
     background: #fff;
 }
 
-/* MENTION/POLITIQUE */
+/* GENERAL PLANETE */
+.informations {
+    display: flex;
+    color: #FFF;
+    margin: 30px;
+}
+
+.informations div ul {
+    list-style-type: none;
+}
+
+.desc p {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+}
+
+/* PAGE MENTION/POLITIQUE */
 .mention {
     color: #fff;
     margin: 15%;
     margin-top: 1%;
     margin-bottom: 2%;
+    height: 100%;
+    width: auto;
 }
 
 .mention h1 {
@@ -161,18 +294,26 @@ header ul {
     font-family: 'Black Ops One', cursive;
 }
 
-/*SECTION CONTACT*/
+/* PAGE CONTACT */
+.body-contact {
+    background: url("../ressources/background/ciell.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .section_contact {
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    height: auto;
 }
 
 .section_contact form {
     margin-right: 30px;
 }
 
-/*FORM*/
+/* FORMULAIRE DE CONTACT */
 .section_contact form {
     width: 700px;
     display: flex;
@@ -247,12 +388,11 @@ form textarea::placeholder {
     color: #000;
     width: 100px;
     padding: 0;
-    margin-right: 500px;
     margin-bottom: 30px;
     transition: 0.3s;
 }
 
-/*CONTACT*/
+/* CARTES INFO CONTACT */
 .contact-info {
     display: flex;
     align-items: center;
@@ -307,7 +447,7 @@ form textarea::placeholder {
     opacity: 1;
 }
 
-/* BODY SECTION */
+/* PAGE PLANETES/SATELLITES/ASTEROIDES */
 #parallax {
     position: relative;
     width: 100%;
@@ -342,9 +482,23 @@ form textarea::placeholder {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 5vh;
-    margin-top: 100px;
+    margin-top: 200px;
     z-index: 1;
 }
+
+#parallax p {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 450px;
+    width: 80%;
+    z-index: 1;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+}
+
+
 
 #explore {
     text-decoration: none;
@@ -356,7 +510,7 @@ form textarea::placeholder {
     font-size: 3vh;
     height: 35px;
     width: 200px;
-    margin-top: 250px;
+    margin-top: 350px;
     z-index: 1;
     scroll-behavior: smooth;
     cursor: pointer;
@@ -366,7 +520,7 @@ form textarea::placeholder {
 
 #explore:hover {
     transition: all 0.3s ease-in-out;
-    background: #BDBDBD;
+    background-color: #2c5364;
     color: #000;
     border: 2px solid #000;
 }
@@ -461,6 +615,11 @@ form textarea::placeholder {
     visibility: visible;
 }
 
+#second {
+    height: auto;
+    width: 100%;
+}
+
 #second h1 {
     text-align: center;
     letter-spacing: 1px;
@@ -474,7 +633,7 @@ form textarea::placeholder {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .div-presentation {
@@ -503,130 +662,11 @@ form textarea::placeholder {
     border-radius: 10px;
 }
 
-/* SECTION */
-section {
-    height: 100vh;
-    width: 100%;
-}
-
-
-#start section {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-}
-
-#start section .btn-section {
-    padding-bottom: 450px;
-}
-
-#start section .section-nav {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-
-.s0 {
-    background: url('../ressources/background/news.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.s1 {
-    background: url('../ressources/background/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.s2 {
-    background: url('../ressources/background/satellites.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.s3 {
-    background: url('../ressources/background/asteroide.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.s4 {
-    background: url('../ressources/background/contact.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-
-.btn-first {
-    border: 2px solid #fff;
-    outline: none;
-    background: transparent;
-    font-size: 30px;
-    padding: 20px;
-    width: 300px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Black Ops One', cursive;
-    position: relative;
-    z-index: 1;
-}
-
-.btn-first::before {
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 77px;
-    top: 0;
-    left: 0;
-    background-color: #2c5364;
-    z-index: -1;
-    transition: .4s ease-in-out;
-}
-
-.btn-first:hover {
-    transition: all 0.3s ease-in-out;
-    color: #000;
-    border: 2px solid #000;
-}
-
-.btn-first:hover:before {
-    width: 296px;
-}
-
-.content a {
-    border: 1px solid #fff;
-    outline: none;
-    background: transparent;
-    font-size: 10px;
-    padding: 10px;
-    width: 100px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Black Ops One', cursive;
-}
-
-.content a:hover {
-    transition: all 0.3s ease-in-out;
-    background: #BDBDBD;
-    color: #000;
-    border: 1px solid #000;
-}
-
 /* FOOTER SECTION */
 footer {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: #FFF;
-    padding: 5%;
+    padding: 4%;
 }
 
 .hr-contact {
@@ -712,6 +752,7 @@ label a {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: auto;
     padding-top: 30px;
 }
 
@@ -735,9 +776,7 @@ label a {
     border-bottom: 3px solid #FFF;
 }
 
-
-/* MEDIA */
-/* WIDTH */
+/* MEDIA WIDTH */
 /* WIDTH MIN*/
 @media all and (min-width:769px) {
     .onglets_tel {
@@ -746,9 +785,6 @@ label a {
 }
 
 /* WIDTH MAX */
-
-
-
 @media all and (max-width:1024px) {
     .onglets_tel {
         display: flex;
@@ -823,15 +859,7 @@ label a {
     .form {
         padding: 0px;
     }
-
-    #input3 {
-        width: 120px;
-    }
 }
-
-
-
-
 
 @media all and (max-width:425px) {
 
@@ -846,6 +874,10 @@ label a {
 
     label {
         font-size: 0.9rem;
+    }
+
+    .mention {
+        margin: 2%;
     }
 
     input,
@@ -875,9 +907,7 @@ label a {
     }
 }
 
-
-
-/* HEIGHT */
+/* MEDIA MAX HEIGHT */
 @media all and (max-height:601px) {
 
     #start section div {

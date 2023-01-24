@@ -1,41 +1,24 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolarSys</title>
-    <link rel="stylesheet" href="../css/styletest.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Open+Sans:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="../ressources/icons/icon.png">
-</head>
+<?php
+//on met en place les variables pour le header
+$titre = "SolarSys | Mention";
+$style = "../css";
+$pathIcon = "../ressources/icons";
+//on inclut le header
+include "../includes/header.php";
+?>
 
 <body>
-    <header>
-        <div class="title">
-            <a href="../../index.html">
-                <h1>SolarSys</h1>
-            </a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a class="menu" href="../../index.html">Accueil</a></li>
-                <li><a class="menu" href="./news.html">News</a></li>
-                <li><a class="menu" href="Planetes.html">Planètes</a></li>
-                <li><a class="menu" href="Satellites.html">Satellites</a></li>
-                <li><a class="menu" href="Asteroides.html">Asteroïdes</a></li>
-                <li><a class="menu" href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="onglets_tel">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </div>
-    </header>
+<?php
+    //on met en place les variables pour la nav
+    $titre_logo = "../../index.php";
+    $lien_nav1 = "./news.php";
+    $lien_nav2 = "./Planetes.php";
+    $lien_nav3 = "./Satellites.php";
+    $lien_nav4 = "./Asteroides.php";
+    $lien_nav5 = "./Contact.php";
+    //on inclut le header
+    include "../includes/nav.php";
+    ?>
 
     <div class="home"></div>
 
@@ -161,75 +144,13 @@
         </div>
     </section>
 
-    <footer class="contact">
-        <hr class="hr-contact">
-        <div class="services">
-            <div class="part_1">
-                <div class="service">
-                    <h3>Catégories</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="Planetes.html">Planètes</a></li>
-                            <li><a href="Satellites.html">Satellites</a></li>
-                            <li><a href="Asteroides.html">Asteroïde</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="service">
-                    <h3>aide & information</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="Mention.html">Mention légales</a></li>
-                            <li><a href="Politique.html">Politique de confidentialité</a></li>
-                            <li><a href="Contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="service">
-                    <h3>nous suivre</h3>
-                    <nav>
-                        <ul>
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Instagram</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">Linkedin</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div>
-                <form action="" method="post">
-                    <div class="service">
-                        <h3>restez informé</h3>
-                        <input type="email" class="inp-form">
-                        <input type="checkbox" id="ch1">
-                        <label for="ch1">En vous inscrivant, vous acceptez de vous conformer à la <a
-                                href="Politique.html">Politique de Confidentialité</a>.</label>
-                        <input type="submit" value="S'ABONNER" class="inp-form">
-                    </div>
-                </form>
-            </div>
-            <section id="reseaux">
-                <a href="">
-                    <div><img src="../ressources/icons/FacebookIcon.png"></div>
-                </a>
-                <a href="">
-                    <div><img src="../ressources/icons/InstagramIcon.png"></div>
-                </a>
-                <a href="">
-                    <div><img src="../ressources/icons/TwitterIcon.png"></div>
-                </a>
-                <a href="">
-                    <div><img src="../ressources/icons/LinkedInIcon.png"></div>
-                </a>
-            </section>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="../js/main.js"></script>
+    <?php
+    //on met en place les variables pour le footer
+    $js = "../js";
+    $path = ".";
+    //on inclut le header
+    include "../includes/footer.php";
+    ?>
 </body>
 
 </html>

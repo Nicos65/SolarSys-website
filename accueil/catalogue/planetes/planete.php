@@ -37,6 +37,8 @@
 
     <div class="home"></div>
 
+    <img src="../../ressources/planetes/terre.png">
+
     <section class="informations">
         <div>
             <ul>
