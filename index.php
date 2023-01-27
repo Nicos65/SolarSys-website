@@ -4,7 +4,7 @@ $titre = "SolarSys";
 $style = "accueil/css";
 $pathIcon = "accueil/ressources/icons";
 //on inclut le header
-include "accueil/includes/header.php";
+include "accueil/vue/header.php";
 ?>
 
 <body id="start">
@@ -18,7 +18,7 @@ include "accueil/includes/header.php";
     $lien_nav4 = "#ancre_3";
     $lien_nav5 = "#ancre_4";
     //on inclut le header
-    include "accueil/includes/nav.php";
+    include "accueil/vue/nav.php";
     ?>
 
     <video autoplay="true" loop muted>
@@ -27,7 +27,7 @@ include "accueil/includes/header.php";
 
     <section class="s0" id="ancre_0">
         <div class="btn-section">
-            <a href="accueil/catalogue/news.php" class="init"><button class="btn-first">Découvrir</button></a>
+            <a href="accueil/vue/news.php" class="init"><button class="btn-first">Découvrir</button></a>
         </div>
         <div class="section-nav">
             <a href="#start"><img width="60" src="accueil/ressources/icons/haut.png" alt="bouton haut"></a>
@@ -37,7 +37,7 @@ include "accueil/includes/header.php";
 
     <section class="s1" id="ancre_1">
         <div class="btn-section">
-            <a href="accueil/catalogue/Planetes.php" class="init"><button class="btn-first">Découvrir</button></a>
+            <a href="accueil/vue/Planetes.php" class="init"><button class="btn-first">Découvrir</button></a>
         </div>
         <div class="section-nav">
             <a href="#ancre_0"><img width="60" src="accueil/ressources/icons/haut.png" alt="bouton haut"></a>
@@ -47,7 +47,7 @@ include "accueil/includes/header.php";
 
     <section class="s2" id="ancre_2">
         <div class="btn-section">
-            <a href="accueil/catalogue/Satellites.php"><button class="btn-first">Découvrir</button></a>
+            <a href="accueil/vue/Satellites.php"><button class="btn-first">Découvrir</button></a>
         </div>
         <div class="section-nav">
             <a href="#ancre_1"><img width="60" src="accueil/ressources/icons/haut.png" alt="bouton haut"></a>
@@ -57,7 +57,7 @@ include "accueil/includes/header.php";
 
     <section class="s3" id="ancre_3">
         <div class="btn-section">
-            <a href="accueil/catalogue/Asteroides.php"><button class="btn-first">Découvrir</button></a>
+            <a href="accueil/vue/Asteroides.php"><button class="btn-first">Découvrir</button></a>
         </div>
         <div class="section-nav">
             <a href="#ancre_2"><img width="60" src="accueil/ressources/icons/haut.png" alt="bouton haut"></a>
@@ -67,7 +67,7 @@ include "accueil/includes/header.php";
 
     <section class="s4" id="ancre_4">
         <div class="btn-section">
-            <a href="accueil/catalogue/Contact.php"><button class="btn-first">Découvrir</button></a>
+            <a href="accueil/vue/Contact.php"><button class="btn-first">Découvrir</button></a>
         </div>
         <div class="section-nav">
             <a href="#ancre_3"><img width="60" src="accueil/ressources/icons/haut.png" alt="bouton haut"></a>
@@ -78,10 +78,10 @@ include "accueil/includes/header.php";
     <?php
     //on met en place les variables pour le footer
     $js = "accueil/js";
-    $path = "accueil/catalogue";
-    $pathIcon = "accueil/ressources/icons";
+    $path = "accueil/vue";
+    $pathNews = "newsletter.php";
     //on inclut le header
-    include "accueil/includes/footer.php";
+    include "accueil/vue/footer.php";
     ?>
 
 </body>

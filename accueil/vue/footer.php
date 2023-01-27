@@ -37,17 +37,10 @@
                 </nav>
             </div>
         </div>
-        <div>
-            <form action="" method="post">
-                <div class="service">
-                    <h3>restez informé</h3>
-                    <input type="email" class="inp-form">
-                    <input type="checkbox" id="ch1">
-                    <label for="ch1">En vous inscrivant, vous acceptez de vous conformer à la <a href="Politique.php">Politique de Confidentialité</a>.</label>
-                    <input type="submit" value="S'ABONNER" class="inp-form">
-                </div>
-            </form>
-        </div>
+        <?php
+        //on inclut la Newsletter
+        include $pathNews;
+        ?>
         <div id="reseaux">
             <a href="https://www.facebook.com/profile.php?id=100089621671053">
                 <div><img src="<?= $pathIcon ?>/FacebookIcon.png"></div>

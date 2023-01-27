@@ -4,7 +4,7 @@ $titre = "SolarSys | Politique";
 $style = "../css";
 $pathIcon = "../ressources/icons";
 //on inclut le header
-include "../includes/header.php";
+include "header.php";
 ?>
 
 <body>
@@ -17,7 +17,7 @@ include "../includes/header.php";
     $lien_nav4 = "./Asteroides.php";
     $lien_nav5 = "./Contact.php";
     //on inclut le header
-    include "../includes/nav.php";
+    include "nav.php";
     ?>
 
     <div class="home"></div>
@@ -244,8 +244,9 @@ include "../includes/header.php";
     //on met en place les variables pour le footer
     $js = "../js";
     $path = ".";
-    //on inclut le header
-    include "../includes/footer.php";
+    $pathNews = "newsletter.php";
+    //on inclut le footer
+    include "footer.php";
     ?>
 </body>
 

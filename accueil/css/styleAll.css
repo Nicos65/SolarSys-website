@@ -730,13 +730,11 @@ footer {
 
 .inp-form {
     height: 30px;
-    width: 250px;
+    width: 300px;
     display: block;
     cursor: pointer;
-    text-transform: uppercase;
     border: 2px solid #000;
     outline: none;
-    border-radius: 50px;
 }
 
 .inp-form:hover {
