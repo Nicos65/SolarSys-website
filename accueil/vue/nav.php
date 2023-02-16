@@ -1,13 +1,13 @@
 <header>
 
     <div class="title">
-        <a href="<?= $titre_logo ?>">
+        <a href="controller_Page.php?page=accueil">
             <h1>SolarSys</h1>
         </a>
     </div>
     <nav class="nav">
         <ul>
-            <li><a href="<?= $titre_logo ?>">Accueil</a></li>
+            <li><a href="controller_Page.php?page=accueil">Accueil</a></li>
             <li><a href="<?= $lien_nav1 ?>">News</a></li>
             <li><a href="<?= $lien_nav2 ?>">Planètes</a></li>
             <li><a href="<?= $lien_nav3 ?>">Satellites</a></li>

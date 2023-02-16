@@ -22,7 +22,7 @@ a {
 }
 
 .home {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 /* SECTION BODY */
@@ -253,21 +253,40 @@ header ul {
     background: #fff;
 }
 
-/* GENERAL PLANETE */
-.informations {
+/* GENERAL PLANETES/SATELLITES/ASTEROIDES */
+.affiche {
     display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.informations {
+    display: block;
     color: #FFF;
-    margin: 30px;
+}
+
+.informations iframe {
+    width: 500px;
+    height: 500px;
 }
 
 .informations div ul {
     list-style-type: none;
 }
 
+.informations div ul li {
+    padding-top: 20px;
+}
+
+.desc {
+    overflow-y: scroll;
+}
+
 .desc p {
     padding: 20px;
+    margin-left: 50px;
+    color: #FFF;
     font-family: 'Open Sans', sans-serif;
-    width: 50%;
 }
 
 /* PAGE MENTION/POLITIQUE */
@@ -276,7 +295,7 @@ header ul {
     margin: 15%;
     margin-top: 1%;
     margin-bottom: 2%;
-    height: 100%;
+    height: auto;
     width: auto;
 }
 
@@ -343,6 +362,10 @@ header ul {
     background: none;
     border-bottom: 2px solid #fff;
     color: #fff;
+}
+
+.section_contact form input:hover {
+    background-color: #000;
 }
 
 .section_contact form select {

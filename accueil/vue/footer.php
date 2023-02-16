@@ -6,10 +6,10 @@
                 <h3>Catégories</h3>
                 <nav>
                     <ul>
-                        <li><a href="<?= $path ?>/news.php">News</a></li>
-                        <li><a href="<?= $path ?>/Planetes.php">Planètes</a></li>
-                        <li><a href="<?= $path ?>/Satellites.php">Satellites</a></li>
-                        <li><a href="<?= $path ?>/Asteroides.php">Asteroïde</a></li>
+                        <li><a href="controller_Page.php?page=news">News</a></li>
+                        <li><a href="controller_Page.php?page=Planetes">Planètes</a></li>
+                        <li><a href="controller_Page.php?page=Satellites">Satellites</a></li>
+                        <li><a href="controller_Page.php?page=Asteroides">Asteroïde</a></li>
                     </ul>
                 </nav>
             </div>
@@ -18,9 +18,9 @@
                 <h3>aide & information</h3>
                 <nav>
                     <ul>
-                        <li><a href="<?= $path ?>/Mention.php">Mention légales</a></li>
-                        <li><a href="<?= $path ?>/Politique.php">Politique de confidentialité</a></li>
-                        <li><a href="<?= $path ?>/Contact.php">Contact</a></li>
+                        <li><a href="controller_Page.php?page=Mention">Mention légales</a></li>
+                        <li><a href="controller_Page.php?page=Politique">Politique de confidentialité</a></li>
+                        <li><a href="controller_Page.php?page=Contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,25 +37,32 @@
                 </nav>
             </div>
         </div>
-        <?php
-        //on inclut la Newsletter
-        include $pathNews;
-        ?>
+        <div>
+            <form action="controller_mail.php" method="post">
+                <div class="service">
+                    <h3>restez informé</h3>
+                    <input type="email" id="mail" name="mail" class="inp-form">
+                    <input type="checkbox" name="cond" id="cond" required>
+                    <label for="cond">En vous inscrivant, vous acceptez de vous conformer à la <a href="Politique.php">Politique de Confidentialité</a>.</label>
+                    <input type="submit" value="S'ABONNER" class="inp-form">
+                </div>
+            </form>
+        </div>
         <div id="reseaux">
             <a href="https://www.facebook.com/profile.php?id=100089621671053">
-                <div><img src="<?= $pathIcon ?>/FacebookIcon.png"></div>
+                <div><img src="..\accueil\ressources\icons\FacebookIcon.png"></div>
             </a>
             <a href="">
-                <div><img src="<?= $pathIcon ?>/InstagramIcon.png"></div>
+                <div><img src="..\accueil\ressources\icons\InstagramIcon.png"></div>
             </a>
             <a href="">
-                <div><img src="<?= $pathIcon ?>/TwitterIcon.png"></div>
+                <div><img src="..\accueil\ressources\icons\TwitterIcon.png"></div>
             </a>
             <a href="">
-                <div><img src="<?= $pathIcon ?>/LinkedInIcon.png"></div>
+                <div><img src="..\accueil\ressources\icons\LinkedInIcon.png"></div>
             </a>
         </div>
     </div>
 </footer>
-<script src="<?= $js ?>/gsap.min.js"></script>
-<script src="<?= $js ?>/main.js"></script>
+<script src="../accueil/Js/gsap.min.js"></script>
+<script src="../accueil/Js/main.js"></script>
