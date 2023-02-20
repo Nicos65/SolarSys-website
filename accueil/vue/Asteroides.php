@@ -21,7 +21,7 @@
                         <div class="content">
                             <h3><?= $objet["nom_Objet"] ?></h3>
                             <p><?= $objet["resum"] ?></p>
-                            <a href="planetes/planete.php">En savoir plus</a>
+                            <a href="controller_Page.php?page=asteroide_profil">En savoir plus</a>
                         </div>
                         <img src="<?= $objet["url_img_Objet"] ?>" alt="<?= $objet["nom_Objet"] ?>">
                     </div>

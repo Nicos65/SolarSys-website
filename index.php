@@ -1,3 +1,3 @@
 <?php
 // On fait une redirection vers la page acceuil dans vue
-header('location:' . "accueil/vue/acceuil.php");
+header('location:' . "controller/controller_Page.php?page=accueil");
