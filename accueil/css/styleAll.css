@@ -845,6 +845,10 @@ label a {
 }
 
 @media all and (max-width:991px) {
+    body {
+        height: auto;
+    }
+
     .section_contact {
         flex-direction: column;
     }
