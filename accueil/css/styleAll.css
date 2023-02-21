@@ -470,6 +470,47 @@ form textarea::placeholder {
     opacity: 1;
 }
 
+/* PAGE SUCCES */
+.section_succes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    text-align: center
+}
+
+.link_succes {
+    padding-top: 50px;
+}
+
+.link_succes a {
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.link_succes a:hover {
+    font-size: 1.1rem;
+}
+
+.link_succes a::after {
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    transition: .3s ease-in-out;
+}
+
+.link_succes a:hover::after {
+    width: 100%;
+}
+
+.p_succes {
+    padding-top: 10px;
+}
+
 /* PAGE PLANETES/SATELLITES/ASTEROIDES */
 #parallax {
     position: relative;

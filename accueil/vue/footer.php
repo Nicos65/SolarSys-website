@@ -39,6 +39,7 @@
         </div>
         <div>
             <form action="controller_mail.php" method="post">
+                <!-- Redirection -->
                 <div class="service">
                     <h3>restez informé</h3>
                     <input type="email" id="mail" name="mail" class="inp-form">

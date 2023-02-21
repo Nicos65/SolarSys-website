@@ -62,7 +62,7 @@ if (isset($_POST["mail"]) && !empty($_POST["mail"])) {
 
     //Si le message du retour de la requete response a le statut "Succes" alors le message est envoyer
     if ($response->Messages[0]->Status == 'success') {
-        echo "Votre Email a était envoyer avec succes";
+        header("location:" . "controller_Page.php?page=succes");
     }
 
     // On as besoin du fichier contenant tout les appels de fonctions BDD
