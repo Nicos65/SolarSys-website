@@ -21,6 +21,8 @@ if (!empty($_POST)) {
         include("../model/function.php");
         // Appel de fonction pour inserer les données dans la BDD
         insert_model_form($db, $selecte, $nom, $prenom, $email, $mobile, $mess);
+
+        header('location:' . "controller_Page.php?page=contact");
     } else {
         // POST est vide
         // On arrete le processus et on indique a l'utilisateur un message
