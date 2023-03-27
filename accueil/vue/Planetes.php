@@ -1,8 +1,8 @@
 <body>
     <section id="parallax">
         <img src="../accueil/ressources/parallax/stars.png" id="star" alt="background star">
-        <h1 id="titre">planètes</h1>
         <img src="../accueil/ressources/parallax/font.png" id="font" alt="background fixed">
+        <h1 id="titre">planètes</h1>
         <a href="#second" id="explore">Voir</a>
         <p>Une planète est un corps céleste orbitant autour du Soleil ou d'une autre étoile,
             possédant une masse suffisante pour que sa gravité la maintienne en équilibre hydrostatique,
@@ -14,7 +14,7 @@
     <section id="second">
         <h1>Vous pouvez afficher les cartes de chacune des planètes en les survolant</h1>
         <div class="regroup">
-            <?php $objet = afficheObj($db, $id); ?>
+            <?php $objet = afficheObjWithId($db, $id); ?>
             <?php foreach ($objet as $objet) : ?>
                 <div class="Titre_card">
                     <div>

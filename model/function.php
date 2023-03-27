@@ -1,11 +1,25 @@
 <?php
 
 /*-----------------------------------------------------GET-----------------------------------------------------*/
-function afficheObj($db, $id)
+function afficheObjWithId($db, $id)
 {
     try {
         // On écrit la requête
         $sql = "SELECT * FROM objet WHERE id_Categories = $id";
+        // On exécute la requête
+        $requete = $db->query($sql);
+        // On récupère les données
+        return $requete->fetchAll();
+    } catch (Exception $e) {
+        die("error : " . $e->getMessage());
+    }
+}
+
+function afficheObjWithNom($db, $nom)
+{
+    try {
+        // On écrit la requête
+        $sql = "SELECT * FROM objet WHERE nom_Objet = $nom";
         // On exécute la requête
         $requete = $db->query($sql);
         // On récupère les données

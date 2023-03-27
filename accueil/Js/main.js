@@ -1,15 +1,17 @@
-const menu = document.querySelectorAll('.menu');
+const nav = document.querySelectorAll('.nav ul li');
 const title = document.querySelector('.title');
-const btn = document.querySelector('.label');
+const form_contact = document.querySelector('.section_contact');
+const parallax = document.getElementById('parallax');
 
 window.addEventListener('load', () => {
 
     const TL = gsap.timeline({ paused: true });
 
     TL
-        .staggerFrom(menu, 1, { left: -50, opacity: -5 }, 0.2)
-        .from(title, 1, { transform: "scale(0)" }, 0.2)
-        .from(btn, 1, { transform: "scale(0)" }, 0.2)
+        .staggerFrom(title, 1, { left: -50, opacity: -5 }, 0.2)
+        .from(nav, 1, { x: 1000 }, 0.2)
+        .from(parallax, 1, { y: -100 }, 0.2)
+        .from(form_contact, 1, { x:1000, opacity: -2 } ,0.5)
 
     TL.play();
 });

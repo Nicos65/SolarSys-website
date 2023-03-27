@@ -4,7 +4,7 @@
     <!-- template pour afficher news -->
     <section>
     <div class="regroup">
-            <?php $objet = afficheObj($db, $id); ?>
+            <?php $objet = afficheObjWithId($db, $id); ?>
             <?php foreach ($objet as $objet) : ?>
                 <div class="Titre_card">
                     <div>

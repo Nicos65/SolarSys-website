@@ -214,10 +214,14 @@ header ul {
     text-transform: uppercase;
 }
 
+.nav ul li a:hover {
+    color: #6ed3ffd2;
+}
+
 .nav ul li a:after {
     content: "";
     position: absolute;
-    background-color: #FFF;
+    background-color: #fff;
     width: 0;
     height: 3px;
     left: 0;
@@ -324,7 +328,7 @@ header ul {
 .section_contact {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin: 100px 0px 100px 0px;
     height: auto;
 }
 

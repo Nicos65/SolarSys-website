@@ -1,5 +1,4 @@
 <header>
-
     <div class="title">
         <a href="controller_Page.php?page=accueil">
             <h1>SolarSys</h1>
