@@ -15,11 +15,25 @@ function afficheObjWithId($db, $id)
     }
 }
 
-function afficheObjWithNom($db, $nom)
+function afficheObjWithName($db, $name)
 {
     try {
         // On écrit la requête
-        $sql = "SELECT * FROM objet WHERE nom_Objet = $nom";
+        $sql = "SELECT * FROM objet WHERE nom_Objet = '$name'";
+        // On exécute la requête
+        $requete = $db->query($sql);
+        // On récupère les données
+        return $requete->fetchAll();
+    } catch (Exception $e) {
+        die("error : " . $e->getMessage());
+    }
+}
+
+function afficheNews($db)
+{
+    try {
+        // On écrit la requête
+        $sql = "SELECT * FROM article";
         // On exécute la requête
         $requete = $db->query($sql);
         // On récupère les données

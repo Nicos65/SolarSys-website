@@ -60,10 +60,11 @@
                 <div><img src="..\accueil\ressources\icons\TwitterIcon.png"></div>
             </a>
             <a href="">
-                <div><img src="..\accueil\ressources\icons\LinkedInIcon.png"></div>
+                <div><img src="..\accueil\ressources\icons\tiktok.png"></div>
             </a>
         </div>
     </div>
 </footer>
 <script src="../accueil/Js/gsap.min.js"></script>
 <script src="../accueil/Js/main.js"></script>
+<script type="module" src="../accueil/Js/spline.js"></script>

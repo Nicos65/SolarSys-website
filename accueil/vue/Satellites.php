@@ -14,16 +14,16 @@
         <div class="regroup">
             <?php $objet = afficheObjWithId($db, $id); ?>
             <?php foreach ($objet as $objet) : ?>
-                <div class="Titre_card">
+                <div class="Titre_cards">
                     <div>
                         <h1><?= $objet["nom_Objet"] ?></h1>
                     </div>
-                    <div class="card">
+                    <div class="cards">
                         <div class="circle"></div>
                         <div class="content">
                             <h3><?= $objet["nom_Objet"] ?></h3>
                             <p><?= $objet["resum"] ?></p>
-                            <a href="controller_Page.php?page=satellite_profil">En savoir plus</a>
+                            <a href="controller_Page.php?page=satellite_profil&nom=<?= $objet["nom_Objet"] ?>">En savoir plus</a>
                         </div>
                         <img src="<?= $objet["url_img_Objet"] ?>" alt="<?= $objet["nom_Objet"] ?>">
                     </div>

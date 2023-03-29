@@ -2,22 +2,21 @@
     <div class="home"></div>
 
     <!-- template pour afficher news -->
-    <section>
-    <div class="regroup">
-            <?php $objet = afficheObjWithId($db, $id); ?>
+    <section id="second">
+    <h1>News</h1>
+        <div class="regroup">
+            <?php $objet = afficheNews($db); ?>
             <?php foreach ($objet as $objet) : ?>
-                <div class="Titre_card">
-                    <div>
-                        <h1><?= $objet["nom_Objet"] ?></h1>
+                <div class="news">
+                    <div class="div_img_news">
+                        <img src="<?= $objet["url_img_Article"] ?>" alt="<?= $objet["url_img_Article"] ?>">
                     </div>
-                    <div class="card">
-                        <div class="circle"></div>
-                        <div class="content">
-                            <h3><?= $objet["nom_Objet"] ?></h3>
-                            <p><?= $objet["resum"] ?></p>
-                            <a href="controller_Page.php?page=planete_profil">En savoir plus</a>
+                    <div>
+                        <h1><?= $objet["titre_Article"] ?></h1>
+                        <div>
+                            <p class="p_news"><?= $objet["mess_Article"] ?></p>
+                            <p class="date_news"><?= $objet["date_Article"] ?></p>
                         </div>
-                        <img src="<?= $objet["url_img_Objet"] ?>" alt="<?= $objet["nom_Objet"] ?>">
                     </div>
                 </div>
             <?php endforeach ?>

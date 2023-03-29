@@ -22,17 +22,17 @@
 
         <div class="contact-info">
             <div>
-                <img src="../accueil/ressources/icons/enveloppe.png" class="carte-icon">
+                <img src="../accueil/ressources/icons/enveloppe.png" alt="une icone enveloppe" class="carte-icon">
                 <p>Solarsys.nicolas@gmail.com</p>
             </div>
 
             <div>
-                <img src="../accueil/ressources/icons/telephone.png" class="carte-icon">
+                <img src="../accueil/ressources/icons/telephone.png" alt="une icone telephone" class="carte-icon">
                 <p>++33695042167</p>
             </div>
 
             <div>
-                <img src="../accueil/ressources/icons/lieu.png" class="carte-icon">
+                <img src="../accueil/ressources/icons/lieu.png" alt="une icone lieu" class="carte-icon">
                 <p>7 Avenue des lilas<br>75000 Paris, FR</p>
             </div>
         </div>

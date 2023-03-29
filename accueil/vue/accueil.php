@@ -1,6 +1,6 @@
 <body id="start">
 
-    <video autoplay="true" loop muted>
+    <video autoplay loop muted>
         <source src="../accueil/ressources/background/home.mp4" type="video/mp4">
     </video>
 
