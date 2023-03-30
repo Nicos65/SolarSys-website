@@ -10,8 +10,8 @@
     <section id="second">
         <h1>Vous pouvez afficher les cartes de chacune des asteroïde en les survolant</h1>
         <div class="regroup">
-            <?php $objet = afficheObjWithId($db, $id); ?>
-            <?php foreach ($objet as $objet) : ?>
+            <?php $objets = afficheObjWithId($db, $id); ?>
+            <?php foreach ($objets as $objet) : ?>
                 <div class="Titre_cards">
                     <div>
                         <h1><?= $objet["nom_Objet"] ?></h1>

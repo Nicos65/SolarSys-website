@@ -176,6 +176,8 @@ header {
     transition: all 0.3s ease-in-out;
     padding: 40px 100px;
     z-index: 15;
+    background: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(10px);
 }
 
 /* STICKY HEADER JS (anim) */
@@ -271,7 +273,7 @@ header ul {
 }
 
 .cool{
-    width: 350px;
+    width: 300px;
     height: 300px;
 }
 
@@ -369,7 +371,7 @@ header ul {
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.267);
     backdrop-filter: blur(10px);
     flex-wrap: wrap;
 }
@@ -457,7 +459,7 @@ form textarea::placeholder {
 
 
 .contact-info div {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.267);
     backdrop-filter: blur(10px);
     margin: 10px;
     width: 100%;
@@ -494,6 +496,7 @@ form textarea::placeholder {
     opacity: 0;
     transition: 0.3s linear;
     text-align: center;
+    color: #FFF;
 }
 
 .contact-info div:hover p {
